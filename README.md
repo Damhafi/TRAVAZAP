@@ -1,6 +1,7 @@
 # TRAVAZAP
 TRAVAZAP SONISTRO
 
+```javascript
 async function enviarMensagemContinua(mensagem) {
     const main = document.querySelector("#main");
     const textarea = main.querySelector(`div[contenteditable="true"]`);
@@ -25,9 +26,9 @@ async function enviarMensagemContinua(mensagem) {
 const mensagem = "LOOP INFINITO";
 
 enviarMensagemContinua(mensagem);
+```
 
-
-
+```javascript
 async function enviarScript(scriptText){
 	const lines = scriptText.split(/[\n\t]+/).map(line => line.trim()).filter(line => line);
 	main = document.querySelector("#main"),
@@ -55,5 +56,5 @@ async function enviarScript(scriptText){
 enviarScript(`
 ENVIA O TEXTO CABULOSO AQUI
 `).then(e => console.log(`Código finalizado, ${e} mensagens enviadas`)).catch(console.error)
-
+```
 
